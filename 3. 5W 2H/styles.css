@@ -1,0 +1,159 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f1f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #07F;
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Seções principais */
+section {
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.9s ease, box-shadow 0.9s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #005a99;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #07F;
+    border-radius: 10px;
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease, opacity 0.9s ease;
+    opacity: 0;
+}
+
+section:hover ul {
+    max-height: 500px; /* Valor generoso para listas maiores */
+    opacity: 1;
+}
+
+li {
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #07F;
+    color: #fff;
+    font-size: 1em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    color: #07F;
+    text-decoration: none;
+    transition: color 0.9s ease;
+}
+
+a:hover {
+    color: #005a99;
+}
+
+/* Botão */
+button, a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #07F;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a.button:hover {
+    background-color: #005a99;
+}
+
+/* Efeitos de transição para interatividade */
+h2, p, li {
+    transition: color 0.9s ease;
+}
+
+h2:hover {
+    color: #004b80;
+}
+
+p:hover, li:hover {
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    p, li {
+        font-size: 1em;
+    }
+}
