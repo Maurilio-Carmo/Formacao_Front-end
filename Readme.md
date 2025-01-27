@@ -1,6 +1,7 @@
 # 🔧 Repositório de Atividades - Formação Front-End
 
-Bem-vindo(a) ao repositório de atividades do curso Formação Front-End: HTML, CSS, JavaScript, React e mais! da Udemy. Aqui você encontrará o código e as soluções das atividades do curso. Além de testes e esperimentos com programação ✨
+Bem-vindo(a) ao repositório de atividades do curso Formação **Front-End: HTML, CSS, JavaScript, React e mais! da Udemy ministrado por: Matheus Battisti**.
+Aqui você encontrará o código e as soluções das atividades do curso. Além de testes e esperimentos com programação ✨
 
 ---
 
